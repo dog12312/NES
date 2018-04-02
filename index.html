@@ -12,7 +12,7 @@ var nes = new jsnes.NES({
 
 // Read ROM data from disk (using Node.js APIs, for the sake of this example)
 const fs = require('fs');
-var romData = fs.readFileSync('path/to/rom.nes', {encoding: 'binary'});
+var romData = fs.readFileSync('/NES/roms/croom/croom.nes', {encoding: 'binary'});
 
 // Load ROM data as a string or byte array
 nes.loadROM(romData);
